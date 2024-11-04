@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #dcdcdc;
+    margin: 5px 0px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+/* khung web*/
+#main{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*end khung web */
+
+/* phần banner*/
+#head{
+    height: auto;
+    object-fit: contain;
+}
+img{
+    height:300px;
+    width: 1200px;
+    padding-left: 0px;
+}
+
+/* end phần banner*/
+
+/* phần navmenu*/
+#main-menu{
+    height: 50px;
+    background: #4b5402;
+    color: #ffffff;
+}
+.active {
+background-color: #4CAF50;
+}
+#main-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#main-menu ul li a{text-decoration: none; }
+
+#main-menu ul li{ position: relative; }
+
+#main-menu > ul > li{ float: left;}
+
+#main-menu > ul > li >a{ display: inline-block;  line-height: 40px; padding: 5px 15px; color: #fff; font-weight: bold;}
+/* sub menu */
+#main-menu ul ul { width: 127px; background-color:#814040; position: absolute; top: 150%; left: 0; 
+opacity: 0; visibility: hidden; transition: all 0.5s;} /*opacity làm mờ, visi ẩn hoàn toàn r dùng hover gọi nó lên */
+
+#main-menu ul ul li a{ display: inline-block; padding: 8px 15px; color: #fff;}
+/* sub menu thứ 3 trở đi */
+#main-menu ul ul ul{ top:0; left: 101%;}
+/* hover*/
+#main-menu ul li:hover>ul { opacity: 1; visibility: visible; transition: all 0.5s; top: 100%}
+
+#main-menu ul li a:hover{
+    background: #814040;
+}
+  input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 9px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    border: 2px solid #e0d8d8;  
+  }
+
+/* end phần navmenu*/
+
+/* Phần CONTENT bên trái web */
+#content #khungspbentrai{
+float: left;
+width: 900px;
+}
+.sanpham{
+    width: 100%; 
+    height: auto; 
+    float:left; 
+}
+.khungsp{
+    position: relative;
+    width: 30%; 
+    height: 320px; 
+    float:left; 
+    margin: 0px 15px 15px 0px; 
+    padding:0px 4px 0px 4px; 
+    border:1px solid #3f0707;
+    border-radius: 10px;
+}
+.khungsp img {
+    width: 210px;
+     height:340px; 
+     margin: -60px 0px 0px 30px;
+     object-fit: contain;
+     position:absolute;
+}
+.khungsp h3{
+    margin-top: 83%;
+	font-size: 18px;
+	padding: 10px 15px;
+	background: #02544289;
+    text-align: center;
+}
+.khungsp h3 a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+ 
+#content #khungtintucbentrai{
+    float: left;
+    width: 800px;
+    display: flex;
+  
+    flex-wrap: wrap;
+}
+.khungtintuc{
+    display:flex;
+    width: 780px;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #921010;
+    border-radius: 5px;
+   
+}
+.khungtintuc img{
+    width: 96%; 
+     height:100%; 
+     margin: 0px 0px 0px 0px;
+     object-fit: contain;
+    max-width: 270px;
+margin-bottom: 1px;
+}
+.khungtintuc h2{
+    width: 100%;
+    margin-left: 10px;
+    max-width: 460px;
+    height: 20px;
+    text-decoration: none;
+}
+.khungtintuc h2 a{
+    text-decoration: none;
+    color: black;
+}
+.khungtintuc p{
+    margin-top: 30px;
+    margin-left: -460px;
+        display: flex;
+        position:static; 
+
+}
+.khungtintuc h4{
+    font-size: 20px;
+    width: 100%;
+    margin-left: 10px;
+    max-width: 460px;
+    height: 20px;
+    text-decoration: none;
+}
+.khungtintuc h4 a{
+    text-decoration: none;
+    color: rgb(40, 77, 7);
+}
+
+
+#content #maincontent{
+    float: left;
+    width: 900px;
+ 
+}
+
+.slideshow{
+    width: 895px;
+    margin-top: 1px;
+}
+.slideshow img{
+    width: 895px;
+    height: 900px;
+}
+.GT{
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(78, 5, 5);
+    
+    font-size:20px;
+}
+
+
+
+
+/* END Phần CONTENT bên trái web */
+
+/*Phần CONTENT bên phải web */
+#content #right{
+    float: right;
+    width: 300px;
+    margin-top: 1px;
+}
+
+h3{
+	font-size: 18px;
+	padding: 10px 15px;
+	background: #02544a85;
+    text-align: center;
+}
+.list{
+	border-bottom: 1px solid #ccc;
+	border-top: none;
+}
+.list ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list ul li{
+	transition: .4s;
+	padding: 10px 15px;
+	background: #fff;
+    border-top: 1px solid #ccc;
+    transition: all 0.7s;
+}
+.list ul li a{
+	color: #000;
+	text-decoration: none;
+}
+.list ul li:hover{
+    background: #144d68;
+    color: #fff;
+    transition: all 0.7s;
+}
+.list ul li:hover a{
+	color: #fff;
+}
+
+/*END Phần CONTENT bên phải web */
+#footer{
+    clear: both;
+    background: #4b5402;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
